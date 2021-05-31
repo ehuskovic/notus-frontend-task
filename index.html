@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>NOTUS - Ella Huskovic</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<!-- Link for the usage of google fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/styles/index.css" />
+		<link rel="stylesheet" href="./assets/styles/lightslider.css" />
+
+		<!-- jQuery -->
+		<script type="text/javascript" src="./assets/js/JQuery3.3.1.js"></script>
+		<script type="text/javascript" src="./assets/js/lightslider.js"></script>
+	</head>
+	<body>
+		<!-- TASK-1 -->
+		<!-- 		Task 1 was to develop a loader that will be triggered whenever
+			 page is loading. I have decide to animate the loader with just a simple CSS. -->
+		<div class="loading-wrapper">
+			<img src="./assets/images/Notus-logo-loading.svg" alt="Logo" />
+			<p>Task1 - Loading</p>
+		</div>
+
+		<div class="home-page">
+			<!-- This is a menu whose icon and text are changed everytime user clickes on them. The code for it is in the menu.js file -->
+			<div class="menu-container">
+				<nav>
+					<ul role="navigation" class="hidden">
+						<div id="task6">Task 6 - Menu</div>
+						<li><a href="#task3">Task 3</a></li>
+						<li><a href="#task4">Task 4</a></li>
+						<li><a href="#task5">Task 5</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- TASK-2 - slide that shows a new image everytime button is clicked and text stays the same. Logic for slider is in the slideshow.js file-->
+			<div class="slider">
+				<div class="img-container">
+					<img
+						src="./assets/images/notus-task1-img1.jpg"
+						alt="Home page"
+						class="img-slider"
+					/>
+				</div>
+			</div>
+
+			<div class="meni">
+				<div id="meni-text">Menu</div>
+				<img
+					src="./assets/images/notus-meni.png"
+					alt="Notus meni"
+					id="meni-img"
+				/>
+			</div>
+			<!-- logo of the Notus company that is changed based on a menu-->
+			<div id="logo">
+				<img
+					src="./assets/images/Notus-logo-main.png"
+					alt="Notus logo"
+					id="logo-img"
+				/>
+			</div>
+			<h1>Notus Front-end test</h1>
+			<p>Task2 - slider</p>
+
+			<!-- Buttons for a slideshow -->
+			<div class="buttons">
+				<button class="btn" onclick="prev()"><</button>
+				<button class="btn" onclick="next()">></button>
+				<p id="couter-paragraph">1/3</p>
+			</div>
+		</div>
+
+		<!-- TASK3 - just a static gallery that is responsive -->
+		<div class="task3-container" id="task3">
+			<h1>Task 3</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges:
+				constructio interrete. Ut aliquid scire se gaudeant? Illi enim inter se
+				dissentiunt. Nec vero sum nescius esse utilitatem in historia, non modo
+				voluptatem. Quamquam te quidem video minime esse deterritum.
+			</p>
+			<div class="fixed-gallery">
+				<div class="img-side-container">
+					<img src="./assets/images/notus-task2-img4.jpg" alt="" />
+				</div>
+				<div class="img-center-container">
+					<img src="./assets/images/notus-task2-img1.jpg" alt="" />
+					<img src="./assets/images/notus-task2-img3.jpg" alt="" />
+				</div>
+				<div class="img-side-container">
+					<img src="./assets/images/notus-task2-img2.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+
+		<!-- TASK4 - gallery that is also a slider. Did with the help of jQuery. It is also responsive for mobile devices. -->
+		<div class="task4-container" id="task4">
+			<h1>Task 4</h1>
+			<div class="slider-gallery">
+				<ul id="autoWidth" class="cs-hidden">
+					<li class="item-a">
+						<div class="box">
+							<img
+								src="./assets/images/notus-task3-img1.jpg"
+								alt="task-3-gallery"
+							/>
+						</div>
+					</li>
+
+					<li class="item-a">
+						<div class="box">
+							<img
+								src="./assets/images/notus-task3-img2.jpg"
+								alt="task-3-gallery"
+							/>
+						</div>
+					</li>
+
+					<li class="item-a">
+						<div class="box">
+							<img
+								src="./assets/images/notus-task3-img3.jpg"
+								alt="task-3-gallery"
+							/>
+						</div>
+					</li>
+
+					<li class="item-a">
+						<div class="box">
+							<img
+								src="./assets/images/notus-task3-img4.jpg"
+								alt="task-3-gallery"
+							/>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- TASK 5 -->
+		<!-- google maps that shows NOTUS loaction. -->
+		<div id="map"></div>
+
+		<div class="task5-container" id="task5">
+			<h1>Task 5</h1>
+
+			<p>
+				Quas enim kakaw Graeci appellant, vitia malo quam malitias nominare.
+				Idem adhuc; Idemque diviserunt naturam hominis in animum et corpus.
+				Istam voluptatem, inquit, Epicurus ignorat? Duo enim genera quae erant,
+				fecit tria.
+			</p>
+
+			<span>Ut proverbia non nulla veriora sint quam vestra dogmata</span>
+			<p>
+				An haec ab eo non dicuntur? Idcirco enim non desideraret, quia, quod
+				dolore caret, id in voluptate est. Quoniam, si dis placet, ab Epicuro
+				loqui discimus. Quid sequatur, quid repugnet, vident.
+			</p>
+
+			<button><h3>Hover to have solid fill</h3></button>
+		</div>
+
+		<div class="footer-container">
+			<div class="small-footer">
+				<p>&copy; 2019. Notus IT d.o.o.</p>
+			</div>
+			<div class="big-footer">
+				<img src="./assets/images/Notus-logo-footer.png" alt="Notus logo" />
+			</div>
+		</div>
+
+		<script>
+			function initMap() {
+				var location = { lat: 45.78764, lng: 16.02832 };
+				var map = new google.maps.Map(document.getElementById("map"), {
+					zoom: 17,
+					center: location,
+				});
+				var marker = new google.maps.Marker({
+					position: location,
+					map: map,
+				});
+			}
+		</script>
+		<script
+			async
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEKVVbeXFkX4u1nAut12aFrdTQLsrB31g&callback=initMap"
+		></script>
+		<script src="assets/js/loader.js"></script>
+		<script src="assets/js/slideshow.js"></script>
+		<script src="assets/js/menu.js"></script>
+		<script type="text/javascript" src="assets/js/script.js"></script>
+	</body>
+</html>
